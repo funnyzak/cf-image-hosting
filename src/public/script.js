@@ -60,7 +60,7 @@ function handleUpload(file) {
   fetch("/upload", { method: "POST", body: formData })
     .then((response) => response.json())
     .then((data) => {
-      const src = window.location.origin + data[0].src;
+      const src = window.location.origin + '/pphhyy' + data[0].src;
       uploadStatus.innerHTML = `
                 <div class="alert alert-success">Upload successful! 🥳</div>
                 <div class="input-group">

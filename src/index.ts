@@ -16,8 +16,8 @@ app.post("/upload", async (c) => {
   });
 });
 
-app.get("/file/:fileName", async (c) => {
-  return fetch(`${c.env.API_HOST}/file/${c.req.param("fileName")}`);
+app.get('/pphhyy/file/:fileName', async (c) => {
+  return fetch(`${c.env.API_HOST}/file/${c.req.param('fileName')}`);
 });
 
 export default app;
